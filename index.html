@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Melvia株式会社</title>
+<meta name="description" content="Melvia株式会社（Melvia, Inc.）は、横浜を拠点にシステム開発とコンサルティングを行う会社です。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'%3E%3Crect width='1000' height='1000' rx='220' fill='%2316140F'/%3E%3Cpolygon points='403.8,266.17 344.4,369.06 225.6,369.06 166.2,266.17 225.6,163.29 344.4,163.29' fill='%23D8BE78'/%3E%3Cpolygon points='403.8,500 344.4,602.88 225.6,602.88 166.2,500 225.6,397.12 344.4,397.12' fill='%23D8BE78'/%3E%3Cpolygon points='403.8,733.83 344.4,836.71 225.6,836.71 166.2,733.83 225.6,630.94 344.4,630.94' fill='%23D8BE78'/%3E%3Cpolygon points='606.3,383.09 546.9,485.97 428.1,485.97 368.7,383.09 428.1,280.2 546.9,280.2' fill='%23E0A93F'/%3E%3Cpolygon points='606.3,616.91 546.9,719.8 428.1,719.8 368.7,616.91 428.1,514.03 546.9,514.03' fill='%23E0A93F'/%3E%3Cpolygon points='808.8,500 749.4,602.88 630.6,602.88 571.2,500 630.6,397.12 749.4,397.12' fill='%23F4DC8C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root{
+  --ink:#16140F; --cream:#F1EDDF; --ivory:#F6F2E8; --ivory2:#EDE7D9; --card:#FFFFFF;
+  --gold-pale:#D8BE78; --gold:#E0A93F; --gold-glow:#F4DC8C;
+  --text:#0F172A; --text2:#334155; --text3:#475569; --link:#B45309; --rule:#E0D8C4;
+  --bg:var(--ivory);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#100E0A; --ivory2:#1C1913; --card:#1A1812;
+    --text:#F1EDDF; --text2:#D6CFBD; --text3:#ADA590; --link:#E0A93F; --rule:#2E2A20;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#100E0A; --ivory2:#1C1913; --card:#1A1812;
+  --text:#F1EDDF; --text2:#D6CFBD; --text3:#ADA590; --link:#E0A93F; --rule:#2E2A20;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--text2);
+  font-family:"Zen Kaku Gothic New","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+  font-size:16px; line-height:1.85; letter-spacing:.02em;
+}
+.wrap{max-width:960px; margin-inline:auto; padding-inline:24px}
+a{color:var(--link)}
+a:focus-visible{outline:2px solid var(--gold); outline-offset:3px; border-radius:2px}
+
+/* header + hero share the ink ground */
+.top{background:var(--ink); color:var(--cream)}
+.bar{display:flex; align-items:center; justify-content:space-between; gap:16px; padding-block:22px}
+.brand{display:flex; align-items:center; gap:12px; color:var(--cream); text-decoration:none}
+.brand svg{width:36px; height:36px; flex:none}
+.brand span{font-family:Poppins,"Zen Kaku Gothic New",sans-serif; font-weight:700; font-size:21px; letter-spacing:.01em}
+.bar nav{display:flex; gap:22px; font-size:14px}
+.bar nav a{color:var(--cream); opacity:.8; text-decoration:none}
+.bar nav a:hover{opacity:1}
+.hero{padding-block:72px 88px; position:relative; overflow:hidden}
+.hero .eyebrow{font-family:Poppins,sans-serif; font-weight:600; font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--gold-pale); margin:0 0 20px}
+.hero h1{margin:0; color:var(--cream); font-weight:700; font-size:clamp(28px,5vw,44px); line-height:1.45; letter-spacing:.03em; text-wrap:balance; max-width:18em}
+.hero h1 em{font-style:normal; color:var(--gold-glow)}
+.hero p{margin:24px 0 0; max-width:36em; color:#CFC8B5}
+.honey{position:absolute; right:-40px; bottom:-60px; width:320px; opacity:.16; pointer-events:none}
+
+section{padding-block:72px}
+section + section{border-top:1px solid var(--rule)}
+.label{display:flex; align-items:baseline; gap:14px; margin:0 0 32px}
+.label h2{margin:0; color:var(--text); font-size:26px; font-weight:700; letter-spacing:.06em}
+.label small{font-family:Poppins,sans-serif; font-weight:600; font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--link)}
+
+.services{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr)); gap:24px}
+.svc{background:var(--card); border:1px solid var(--rule); border-radius:6px; padding:32px 30px}
+.svc h3{margin:0 0 12px; color:var(--text); font-size:20px; letter-spacing:.05em; display:flex; align-items:center; gap:12px}
+.svc h3::before{content:""; width:14px; height:16px; flex:none; background:var(--gold); clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%)}
+.svc:nth-child(2) h3::before{background:var(--gold-glow)}
+.svc p{margin:0 0 16px}
+.svc ul{margin:0; padding-left:1.2em; color:var(--text3); font-size:15px}
+.svc li + li{margin-top:4px}
+
+dl.profile{margin:0; display:grid; grid-template-columns:10em 1fr; border-top:1px solid var(--rule)}
+dl.profile dt, dl.profile dd{margin:0; padding:18px 4px; border-bottom:1px solid var(--rule)}
+dl.profile dt{color:var(--text3); font-size:14px; font-weight:500; letter-spacing:.08em}
+dl.profile dd{color:var(--text)}
+dl.profile dd .en{color:var(--text3); font-size:14px}
+dl.profile ol{margin:0; padding-left:1.4em}
+.num{font-variant-numeric:tabular-nums}
+
+.contact{display:flex; flex-wrap:wrap; align-items:center; gap:16px 24px}
+.contact .mail{font-family:Poppins,"Zen Kaku Gothic New",sans-serif; font-weight:600; font-size:clamp(18px,3.4vw,24px); color:var(--text); user-select:all; word-break:break-all}
+.contact p{margin:0; flex-basis:100%; color:var(--text3); font-size:15px}
+
+footer{background:var(--ink); color:#A8A08C; font-size:13px}
+footer .wrap{display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; padding-block:28px}
+
+@media (max-width:640px){
+  .wrap{padding-inline:18px}
+  .bar nav{display:none}
+  .hero{padding-block:48px 64px}
+  section{padding-block:56px}
+  dl.profile{grid-template-columns:1fr}
+  dl.profile dt{padding-bottom:2px; border-bottom:0}
+  dl.profile dd{padding-top:2px}
+  .honey{width:220px}
+}
+</style>
+</head>
+<body>
+<div class="top">
+  <header class="wrap bar">
+    <a class="brand" href="#" aria-label="Melvia株式会社">
+      <svg viewBox="0 0 1000 1000" aria-hidden="true"><rect width="1000" height="1000" rx="220" fill="#16140F" stroke="#3A3428" stroke-width="16"/><polygon points="403.8,266.17 344.4,369.06 225.6,369.06 166.2,266.17 225.6,163.29 344.4,163.29" fill="#D8BE78"/><polygon points="403.8,500 344.4,602.88 225.6,602.88 166.2,500 225.6,397.12 344.4,397.12" fill="#D8BE78"/><polygon points="403.8,733.83 344.4,836.71 225.6,836.71 166.2,733.83 225.6,630.94 344.4,630.94" fill="#D8BE78"/><polygon points="606.3,383.09 546.9,485.97 428.1,485.97 368.7,383.09 428.1,280.2 546.9,280.2" fill="#E0A93F"/><polygon points="606.3,616.91 546.9,719.8 428.1,719.8 368.7,616.91 428.1,514.03 546.9,514.03" fill="#E0A93F"/><polygon points="808.8,500 749.4,602.88 630.6,602.88 571.2,500 630.6,397.12 749.4,397.12" fill="#F4DC8C"/></svg>
+      <span>Melvia</span>
+    </a>
+    <nav aria-label="ページ内">
+      <a href="#service">事業内容</a>
+      <a href="#company">会社概要</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </header>
+  <div class="wrap hero">
+    <p class="eyebrow">System Development &amp; Consulting</p>
+    <h1>業務の課題を、<em>動くシステム</em>で解く。</h1>
+    <p>Melvia株式会社は、横浜を拠点にシステム開発とコンサルティングを行う会社です。業務の整理から設計・開発・運用まで、一貫してお手伝いします。</p>
+    <svg class="honey" viewBox="150 150 680 700" aria-hidden="true"><g fill="none" stroke="#E0A93F" stroke-width="10"><polygon points="403.8,266.17 344.4,369.06 225.6,369.06 166.2,266.17 225.6,163.29 344.4,163.29"/><polygon points="403.8,500 344.4,602.88 225.6,602.88 166.2,500 225.6,397.12 344.4,397.12"/><polygon points="403.8,733.83 344.4,836.71 225.6,836.71 166.2,733.83 225.6,630.94 344.4,630.94"/><polygon points="606.3,383.09 546.9,485.97 428.1,485.97 368.7,383.09 428.1,280.2 546.9,280.2"/><polygon points="606.3,616.91 546.9,719.8 428.1,719.8 368.7,616.91 428.1,514.03 546.9,514.03"/><polygon points="808.8,500 749.4,602.88 630.6,602.88 571.2,500 630.6,397.12 749.4,397.12"/></g></svg>
+  </div>
+</div>
+
+<main>
+  <section id="service">
+    <div class="wrap">
+      <div class="label"><h2>事業内容</h2><small>Service</small></div>
+      <div class="services">
+        <article class="svc">
+          <h3>システム開発</h3>
+          <p>Webアプリケーションや業務システムを、企画・設計から開発、公開後の保守まで担います。</p>
+          <ul>
+            <li>Webアプリケーション・スマートフォンアプリの開発</li>
+            <li>業務システム・社内ツールの設計と構築</li>
+            <li>既存システムの改修・運用保守</li>
+          </ul>
+        </article>
+        <article class="svc">
+          <h3>コンサルティング</h3>
+          <p>業務の流れを整理し、どこをシステムや AI に任せると効果が出るかを一緒に決めます。</p>
+          <ul>
+            <li>業務設計・業務改善の支援</li>
+            <li>DX推進・AI活用の導入支援</li>
+            <li>新規事業の企画・要件定義の支援</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="company">
+    <div class="wrap">
+      <div class="label"><h2>会社概要</h2><small>Company</small></div>
+      <dl class="profile">
+        <dt>商号</dt>
+        <dd>Melvia株式会社 <span class="en">（Melvia, Inc.）</span></dd>
+        <dt>設立</dt>
+        <dd class="num">2026年8月20日</dd>
+        <dt>資本金</dt>
+        <dd class="num">99万円</dd>
+        <dt>代表者</dt>
+        <dd>代表取締役　友野 拓也</dd>
+        <dt>所在地</dt>
+        <dd class="num">〒220-0072<br>神奈川県横浜市西区浅間町一丁目4番3号　ウィザードビル402</dd>
+        <dt>事業内容</dt>
+        <dd>
+          <ol>
+            <li>各種アプリケーションソフトの企画、制作、販売、運営及び管理</li>
+            <li>インターネットを利用した各種情報提供サービス</li>
+            <li>コンピュータシステムの企画、開発、販売及び保守に関する業務</li>
+            <li>経営コンサルティング業務</li>
+            <li>人材育成に関するコンサルティング業務</li>
+            <li>各種業務の受託</li>
+            <li>各種商品及び役務の販売の媒介、取次ぎ及び代理</li>
+          </ol>
+        </dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="label"><h2>お問い合わせ</h2><small>Contact</small></div>
+      <div class="contact">
+        <span class="mail">info@melvia.co.jp</span>
+        <p>ご相談・お見積りのご依頼は、上記のメールアドレスまでお寄せください。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Melvia株式会社</span>
+    <span class="num">© 2026 Melvia, Inc.</span>
+  </div>
+</footer>
+</body>
+</html>
